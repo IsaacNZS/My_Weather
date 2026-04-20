@@ -11,8 +11,12 @@ function Photo({ weather }: WeatherCardProps) {
         alt="Weather"
         className="w-30 h-30"
       />
-      <p className="text-[35px]">{weather?.main.temp}°C</p>
-      <p className="text-[25px]">{weather?.name}</p>
+      <p className="text-[35px] font-bold text-center text-[#ff0088]">
+        {weather?.main.temp}°C
+      </p>
+      <p className="text-[25px] text-[#ddff03] font-bold text-center">
+        {weather?.name}
+      </p>
     </div>
   );
 }

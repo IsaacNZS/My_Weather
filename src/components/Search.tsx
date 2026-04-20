@@ -11,7 +11,7 @@ function Search({ city, setCity, fetchWeather }: SearchProps) {
         type="text"
         value={city}
         placeholder="Enter city name..."
-        className="border-2 pl-2 rounded-full h-10 m-2"
+        className="border-2 pl-2 text-[#421278] rounded-full focus:outline-none focus:border-[#1100ff]  h-10 m-2"
         onChange={(e) => {
           setCity(e.target.value);
         }}
@@ -23,7 +23,7 @@ function Search({ city, setCity, fetchWeather }: SearchProps) {
       />
       <button
         onClick={() => fetchWeather(city)}
-        className="border-2 rounded-full font-bold h-10 px-2"
+        className="border-2 text-[#5f03ff] mr-[5px] rounded-full font-bold h-10 px-2"
       >
         Search
       </button>
