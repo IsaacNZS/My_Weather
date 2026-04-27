@@ -1,21 +1,13 @@
-import type { WeatherData } from "../App";
+import type { search } from "../App";
 
 type WeatherCardProps = {
-  weather: WeatherData | null;
+  weather: search | null;
 };
 function Photo({ weather }: WeatherCardProps) {
   return (
-    <div>
-      <img
-        src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`}
-        alt="Weather"
-        className="w-30 h-30"
-      />
-      <p className="text-[35px] font-bold text-center text-[#ff0088]">
-        {weather?.main.temp}°C
-      </p>
-      <p className="text-[25px] text-[#ddff03] font-bold text-center">
-        {weather?.name}
+    <div className="w-full">
+      <p className="text-[30px] text-[#00d9ff] font-bold text-center">
+        "{weather?.name}" <br />
       </p>
     </div>
   );
